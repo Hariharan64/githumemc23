@@ -5,32 +5,33 @@
     android:padding="16dp">
 
     <EditText
-        android:id="@+id/editTextUserId"
+        android:id="@+id/etUserName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="User ID"
-        android:inputType="text"/>
+        android:hint="User Name" />
 
     <EditText
-        android:id="@+id/editTextUserName"
+        android:id="@+id/etUserNo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editTextUserId"
-        android:hint="User Name"
-        android:inputType="text"/>
+        android:hint="User Number"
+        android:layout_below="@id/etUserName"
+        android:layout_marginTop="16dp" />
 
     <EditText
-        android:id="@+id/editTextUserDesignation"
+        android:id="@+id/etUserDesignation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editTextUserName"
         android:hint="User Designation"
-        android:inputType="text"/>
+        android:layout_below="@id/etUserNo"
+        android:layout_marginTop="16dp" />
 
     <Button
-        android:id="@+id/buttonAddUser"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/editTextUserDesignation"
-        android:text="Add User"/>
+        android:text="Save"
+        android:layout_below="@id/etUserDesignation"
+        android:layout_marginTop="16dp" />
+
 </RelativeLayout>

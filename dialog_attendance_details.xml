@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Holidays and Weekly Off -->
+    <TextView
+        android:id="@+id/tvHolidays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Holidays: 2"
+        android:textSize="16sp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/tvWeeklyOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weekly Off: 1"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/tvHolidays"
+        android:layout_marginTop="8dp" />
+
+    <!-- Leave Attendance -->
+    <TextView
+        android:id="@+id/tvLeaveAttendanceHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leave Attendance"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/tvWeeklyOff"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvPrivilegedLeaves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Privileged leaves: 0"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/tvLeaveAttendanceHeader"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tvCasualLeaves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Casual leaves: 1"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/tvPrivilegedLeaves"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tvSickLeaves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sick leaves: 0"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/tvCasualLeaves"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tvOtherLeaves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Other leaves: 1"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/tvSickLeaves"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tvTotalLeaves"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total leaves: 2"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/tvOtherLeaves"
+        android:layout_marginTop="8dp" />
+
+    <!-- Shift Attendance -->
+    <Button
+        android:id="@+id/btnLeaveBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTotalLeaves"
+        android:layout_marginTop="9dp"
+        android:background="#689312"
+        android:padding="8dp"
+        android:text="LEAVE BALANCE"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tvShiftAttendanceHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shift Attendance"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/btnLeaveBalance"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/tvMorningShift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Morning shift: 0"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/tvShiftAttendanceHeader"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tvAfternoonShift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Afternoon shift: 0"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/tvMorningShift"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tvNightShift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Night shift: 1"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/tvAfternoonShift"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tvGeneralShift"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="General shift: 1"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/tvNightShift"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tvTotalShifts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total shifts: 2"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/tvGeneralShift"
+        android:layout_marginTop="8dp" />
+
+</RelativeLayout>
